@@ -1,0 +1,159 @@
+@import url('./fonts.css');
+@import url('./variables_light.css');
+@import url('./variables_dark.css');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+.caclulator-bg {
+    background:  var(--bg-image);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caclulator{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    height: 540px;
+    padding: 20px 28px;
+    background: var(--calculator-bg);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================== HEADER ======================= */
+
+.calculator-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calculator-title {
+    margin: 0;
+    font-size: 16px;
+    color: var(--tertiary-text-color);
+}
+
+.calculator-theme-toggle{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 68px;
+    flex-shrink: 0;
+    gap: 2px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: var(--toggle-theme-bg);
+}
+
+.theme-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-size: 16px;
+    color: var(--output-operations-color);
+    transition: .2s;
+}
+
+
+.btn-light {
+    background-color: var(--light-theme-toggle);
+}
+
+.btn-light:hover {
+    transform: scale(1.01);
+}
+
+.btn-dark{
+    background-color: var(--dark-theme-toggle);
+}
+
+.btn-dark:hover, .btn-light:hover {
+    transform: scale(1.06);
+}
+
+/* ================================ OUTPUT ===================== */
+
+.output-section {
+    min-height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    gap: 20px;
+}
+
+.output-operations{
+    color: var(--output-operations-color);
+    font-size: 18px;
+}
+
+.output-result{
+    color: var(--output-result-color);
+    font-size: 32px;
+}
+
+/* ========================== KEYBOARD SECTION ================= */
+
+.keyboard-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.keyboard-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(25% - 2px);
+    height: 48px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.keyboard-btn:hover{
+    opacity: .6;
+}
+
+.keyboard-btn:active{
+    opacity: 1;
+}
+
+.primary-btn {
+    background-color: var(--primary-btn-color);
+    color: var(--primary-text-color);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-btn-color);
+    color: var(--secondary-text-color);
+}
+
+.tertiary-btn {
+    background-color: var(--tertiary-btn-color);
+    color: var(--tertiary-text-color);
+}
+
+
+
+
+
+
