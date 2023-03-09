@@ -27,8 +27,8 @@ body {
 .caclulator{
     display: flex;
     flex-direction: column;
-    width: 270px;
-    height: 540px;
+    width: 440px;
+    height: 600px;
     padding: 20px 28px;
     background: var(--calculator-bg);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -67,7 +67,7 @@ body {
     padding: 10px 10px;
     border-radius: 6px;
     font-size: 16px;
-    color: var(--output-operations-color);
+    color: var(--output-history-color);
     transition: .2s;
 }
 
@@ -91,22 +91,23 @@ body {
 /* ================================ OUTPUT ===================== */
 
 .output-section {
-    min-height: 40%;
+    min-height: 30%;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     gap: 20px;
+    /*overflow: hidden;*/
 }
 
-.output-operations{
-    color: var(--output-operations-color);
-    font-size: 18px;
+.output-history{
+    color: var(--output-history-color);
+    font-size: 16px;
 }
 
 .output-result{
     color: var(--output-result-color);
-    font-size: 32px;
+    font-size: 28px;
 }
 
 /* ========================== KEYBOARD SECTION ================= */
@@ -124,7 +125,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-basis: calc(25% - 2px);
-    height: 48px;
+    height: 64px;
     cursor: pointer;
     transition: .3s;
 }
@@ -153,7 +154,15 @@ body {
 }
 
 
+@media screen and (max-width: 450px) {
+    .output-history{
+        font-size: clamp(11px, calc(16 / 450 * 100vw ), 16px);
+    }
 
+    .output-result{
+        font-size: clamp(19px, calc(28 / 450 * 100vw ), 28px);;
+    }
+}
 
 
 

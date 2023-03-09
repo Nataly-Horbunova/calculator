@@ -1,4 +1,4 @@
-[data-dark="true"] {
+[data-dark-theme="true"] {
     --bg-image:  url('../assets/bg-dark.jpg')  center / cover no-repeat;;
     --calculator-bg: linear-gradient(191.34deg, #1a1b1d -4.95%, #313338 103.74%);
 
