@@ -1,21 +1,21 @@
 :root {
     --bg-image:  url('../assets/bg-light.jpg')  center / cover no-repeat;;
-    --calculator-bg: linear-gradient(167.27deg, #F7F8FB -5.94%, #f7f8fb30 103.62%);
+    --main-bg: linear-gradient(167.27deg, #F7F8FB -5.94%, #f7f8fb30 103.62%);
 
     --toggle-theme-bg:#badcfc;
     --light-theme-toggle: #FFFFFF;
     --dark-theme-toggle: #badcfc;
 
-    --output-result-color: #424242;
-    --output-history-color: #818181;
+    --main-text-color: #424242;
+    --casual-text-color: #818181;
 
     --primary-text-color: #FFFFFF;    
     --secondary-text-color: #B2DAFF;
     --tertiary-text-color: #55A1E0;
 
-    --primary-btn-color: rgba(130, 182, 217, 0.3);
-    --secondary-btn-color: #55c1ff;
-    --tertiary-btn-color: #A0CDF4;
+    --primary-color: rgba(130, 182, 217, 0.3);
+    --secondary-color: #55c1ff;
+    --tertiary-color: #A0CDF4;
 }
 
 

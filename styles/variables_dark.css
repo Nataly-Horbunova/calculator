@@ -1,18 +1,18 @@
 [data-dark-theme="true"] {
     --bg-image:  url('../assets/bg-dark.jpg')  center / cover no-repeat;;
-    --calculator-bg: linear-gradient(191.34deg, #1a1b1d -4.95%, #313338 103.74%);
+    --main-bg: linear-gradient(191.34deg, #1a1b1d -4.95%, #313338 103.74%);
 
     --toggle-theme-bg: #616161;
     --light-theme-toggle: #616161;
     --dark-theme-toggle: #303136;
 
-    --output-result-color:  #FFFFFF;
+    --main-text-color:  #FFFFFF;
 
     --primary-text-color: #29A8FF;
     --secondary-text-color: #339DFF;;
     --tertiary-text-color: #A5A5A5;
 
-    --primary-btn-color:  #383a40;
-    --secondary-btn-color: #005DB2;;
-    --tertiary-btn-color: #616161;
+    --primary-color:  #383a40;
+    --secondary-color: #005DB2;;
+    --tertiary-color: #616161;
 } 

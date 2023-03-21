@@ -30,7 +30,7 @@ body {
     width: 440px;
     height: 600px;
     padding: 20px 28px;
-    background: var(--calculator-bg);
+    background: var(--main-bg);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -67,7 +67,7 @@ body {
     padding: 10px 10px;
     border-radius: 6px;
     font-size: 16px;
-    color: var(--output-history-color);
+    color: var(--casual-text-color);
     transition: .2s;
 }
 
@@ -101,12 +101,12 @@ body {
 }
 
 .output-history{
-    color: var(--output-history-color);
+    color: var(--casual-text-color);
     font-size: 16px;
 }
 
 .output-result{
-    color: var(--output-result-color);
+    color: var(--main-text-color);
     font-size: 28px;
 }
 
@@ -139,17 +139,17 @@ body {
 }
 
 .primary-btn {
-    background-color: var(--primary-btn-color);
+    background-color: var(--primary-color);
     color: var(--primary-text-color);
 }
 
 .secondary-btn {
-    background-color: var(--secondary-btn-color);
+    background-color: var(--secondary-color);
     color: var(--secondary-text-color);
 }
 
 .tertiary-btn {
-    background-color: var(--tertiary-btn-color);
+    background-color: var(--tertiary-color);
     color: var(--tertiary-text-color);
 }
 
