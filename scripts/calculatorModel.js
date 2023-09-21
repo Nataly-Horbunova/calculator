@@ -14,9 +14,9 @@ class CalculatorModel {
             this.handleDigitInput(inputValue);
         } else if (this.signs.includes(inputValue)) {
             this.handleOperatorInput(inputValue);
-        } else if (this.secondNumber && inputValue === '=') {
+        } else if (this.secondNumber && (inputValue === '=' || inputValue === 'Enter')) {
             this.handleResult();
-        } else if (e.target.classList.contains('backspace-btn') || e.target.parentElement.classList.contains('backspace-btn')) {
+        } else if (e.target.classList.contains('backspace-btn') || e.target.parentElement.classList.contains('backspace-btn') || inputValue === 'Backspace') {
             this.handleBackSpace();
         } else if (inputValue === 'C') {
             this.handleClear();

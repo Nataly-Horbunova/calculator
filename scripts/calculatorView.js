@@ -15,6 +15,14 @@ class CalculatorView {
         });
     };
 
+    initKeyboardInput() {
+        document.addEventListener('keydown', (e) => {
+            const keyValue = e.key;
+            this.calculatorModel.handleInput(keyValue, e);
+            this.renderOutput();
+        })
+    }
+
     renderOutput() {
         this.outputHistoryView.textContent = this.calculatorModel.outputHistory;
         this.outputResultView.textContent = this.calculatorModel.output;
@@ -22,6 +30,7 @@ class CalculatorView {
 
     init() {
         this.initInput();
+        this.initKeyboardInput();
         this.calculatorTheme.init();
     }
 }
